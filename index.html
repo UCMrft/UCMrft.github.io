@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-08-01 17:49:05 / 修改时间：17:52:29" itemprop="dateCreated datePublished" datetime="2023-08-01T17:49:05+08:00">2023-08-01</time>
+              <time title="创建时间：2023-08-01 17:49:05 / 修改时间：20:51:46" itemprop="dateCreated datePublished" datetime="2023-08-01T17:49:05+08:00">2023-08-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -194,6 +194,35 @@
 
       
           <p>Fuzzy control for start-up of an isothermal CSTR (2004)</p>
+<p>(1) The author pointed out that there are many difficulties for controlling nonlinear process:</p>
+<ol>
+<li>dealing with disturbance</li>
+<li>changing setpoint</li>
+<li>Only a few efforts reported dealing with automatic start-up. Controllers found inadequate without specific strategies</li>
+</ol>
+<p>(2) Fuzzy Logic Control (unnecessary)</p>
+<ol>
+<li>Require human knowledge or human experiences (what should operator adjust when facing unacceptable situations)</li>
+<li>Work without a mathematical model</li>
+<li>Requirement of many parameters when tuning</li>
+</ol>
+<p>Fuzzy set……  Defuzzied……</p>
+<p>(3) Start-up operation</p>
+<p>In this case, the reaction is A+B→C+D, product is C. In other word, feed A and B and discharge A, B, C, D.</p>
+<p>Here are the stages in start-up operation:</p>
+<ol>
+<li>Filling up (in this stage <strong>fill up the tank while heating up at a certain rate</strong>. so the <em><strong>residence time</strong></em> changes)</li>
+<li>Approaching steady state</li>
+<li>Steady state</li>
+</ol>
+<p>(4) The product concentration decreases with increasing start-up flow rate</p>
+<p>Thoughts derived from this paper:</p>
+<ol>
+<li>Bring controlled variables at desired value during stage 1</li>
+<li>Control feed are proportional at a determined ratio</li>
+</ol>
+<hr>
+<p>work of Abu Khalef A.M. ?</p>
 
       
     </div>

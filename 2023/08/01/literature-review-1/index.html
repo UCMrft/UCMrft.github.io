@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Fuzzy control for start-up of an isothermal CSTR (2004)">
+  <meta name="description" content="Fuzzy control for start-up of an isothermal CSTR (2004) (1) The author pointed out that there are many difficulties for controlling nonlinear process:  dealing with disturbance changing setpoint Only">
 <meta property="og:type" content="article">
 <meta property="og:title" content="literature review 1">
 <meta property="og:url" content="http://example.com/2023/08/01/literature-review-1/index.html">
 <meta property="og:site_name" content="Call me Mason if you like..">
-<meta property="og:description" content="Fuzzy control for start-up of an isothermal CSTR (2004)">
+<meta property="og:description" content="Fuzzy control for start-up of an isothermal CSTR (2004) (1) The author pointed out that there are many difficulties for controlling nonlinear process:  dealing with disturbance changing setpoint Only">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-01T09:49:05.000Z">
-<meta property="article:modified_time" content="2023-08-01T09:52:29.120Z">
+<meta property="article:modified_time" content="2023-08-01T12:51:46.780Z">
 <meta property="article:author" content="Mason">
 <meta name="twitter:card" content="summary">
 
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-08-01 17:49:05 / 修改时间：17:52:29" itemprop="dateCreated datePublished" datetime="2023-08-01T17:49:05+08:00">2023-08-01</time>
+              <time title="创建时间：2023-08-01 17:49:05 / 修改时间：20:51:46" itemprop="dateCreated datePublished" datetime="2023-08-01T17:49:05+08:00">2023-08-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -198,6 +198,35 @@
 
       
         <p>Fuzzy control for start-up of an isothermal CSTR (2004)</p>
+<p>(1) The author pointed out that there are many difficulties for controlling nonlinear process:</p>
+<ol>
+<li>dealing with disturbance</li>
+<li>changing setpoint</li>
+<li>Only a few efforts reported dealing with automatic start-up. Controllers found inadequate without specific strategies</li>
+</ol>
+<p>(2) Fuzzy Logic Control (unnecessary)</p>
+<ol>
+<li>Require human knowledge or human experiences (what should operator adjust when facing unacceptable situations)</li>
+<li>Work without a mathematical model</li>
+<li>Requirement of many parameters when tuning</li>
+</ol>
+<p>Fuzzy set……  Defuzzied……</p>
+<p>(3) Start-up operation</p>
+<p>In this case, the reaction is A+B→C+D, product is C. In other word, feed A and B and discharge A, B, C, D.</p>
+<p>Here are the stages in start-up operation:</p>
+<ol>
+<li>Filling up (in this stage <strong>fill up the tank while heating up at a certain rate</strong>. so the <em><strong>residence time</strong></em> changes)</li>
+<li>Approaching steady state</li>
+<li>Steady state</li>
+</ol>
+<p>(4) The product concentration decreases with increasing start-up flow rate</p>
+<p>Thoughts derived from this paper:</p>
+<ol>
+<li>Bring controlled variables at desired value during stage 1</li>
+<li>Control feed are proportional at a determined ratio</li>
+</ol>
+<hr>
+<p>work of Abu Khalef A.M. ?</p>
 
     </div>
 
